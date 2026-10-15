@@ -4,11 +4,15 @@ I developed Meridian to explore how a business can review opportunity requiremen
 
 ## The problem
 
-A confident-looking AI summary can still be wrong. It might cite the wrong document version, combine unrelated passages, omit a conflicting requirement or turn a suggestion into a business decision without a person approving it.
+**Changing source documents make business requirements difficult to verify.**
 
-I wanted the application to make these errors visible. The workflow follows a real business opportunity, retains immutable source versions and lets a reviewer inspect the evidence attached to each proposal.
+An opportunity can arrive through emails, PDFs and spreadsheets, including revised or conflicting instructions. Without precise source references, reviewers can miss important differences or mistake a proposed finding for an approved requirement.
 
-## What I built
+Automated analysis adds another risk: a confident-sounding suggestion may refer to the wrong document version or cite a passage that does not actually exist.
+
+## The solution
+
+**Versioned evidence and reviewable analysis suggestions**
 
 The workspace includes authenticated access, customers and contacts, opportunities and deadlines, received correspondence, private document versions, a manually maintained requirements register and an analysis-suggestion review screen.
 

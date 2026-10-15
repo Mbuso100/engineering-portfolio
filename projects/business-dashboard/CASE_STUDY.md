@@ -4,9 +4,15 @@ I began this project by building a reusable foundation for business applications
 
 ## The problem
 
-A dashboard is not useful if users can access another company's records or if an administrator can accidentally remove the organisation's last active owner. I treated the company boundary, identity and administrative rules as backend responsibilities rather than visual preferences.
+**Uncontrolled access and scattered administration put business records at risk.**
 
-## What I built
+A dashboard can display useful figures while leaving basic questions unanswered: who is allowed to view a company's records, who can manage accounts, and how administrative changes are tracked? Hiding controls in the interface is not enough to enforce those boundaries.
+
+A dependable application needs consistent identity, company context and permission checks before client-specific workflows and reports are added.
+
+## The solution
+
+**A reusable foundation for company-scoped business applications**
 
 The starter establishes a React and TypeScript interface with sign-in, a business overview, users and company settings. Its FastAPI backend implements authentication, company-scoped user queries, role checks, administrative actions and basic activity records. SQLAlchemy provides persistence, with PostgreSQL as the intended deployed database and SQLite for local development.
 

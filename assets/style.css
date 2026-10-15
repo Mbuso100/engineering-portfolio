@@ -49,3 +49,13 @@ code{overflow-wrap:anywhere;word-break:break-word}
 .secondary-media a{font-weight:740}
 @media(max-width:920px){.visual-projects{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:650px){.visual-projects,.demo-stills{grid-template-columns:1fr}.visual-project-image img{height:auto;aspect-ratio:16/9}}
+
+/* Case-study narrative: distinguish the business problem from the implemented solution. */
+.problem-solution h2{font-size:clamp(1.85rem,3.15vw,3rem);line-height:1.18}
+.solution-panel{border-top:4px solid #137757}
+.solution-panel .eyebrow{margin-bottom:8px}
+.solution-panel h3{font-size:clamp(1.32rem,2.1vw,1.75rem);line-height:1.22;letter-spacing:-.035em;margin:9px 0 15px}
+.solution-panel h4{font-size:.84rem;letter-spacing:.085em;text-transform:uppercase;color:#356b55;margin:24px 0 10px}
+.solution-panel p{color:#435e53}
+.solution-panel .feature-list{margin:8px 0 0}
+@media(max-width:650px){.problem-solution h2{font-size:clamp(1.75rem,8vw,2.4rem)}}

@@ -4,11 +4,15 @@ I built an inventory and purchasing application on a reusable business portal fo
 
 ## The problem
 
-An inventory application needs more than item counts. A failed transfer must not deduct stock from one location without crediting the other; a repeated request must not create a second movement; and two concurrent requests must not spend the same available stock.
+**Stock balances are difficult to trust without a reliable movement history.**
 
-I treated those situations as part of the core domain design, not just edge cases to handle in the interface.
+A quantity on screen cannot explain whether stock was received, issued, adjusted or transferred. A retried request could create a duplicate movement, while a partially completed transfer could leave two locations with inconsistent balances.
 
-## What I built
+Purchasing and replenishment introduce more points where quantities, supplier records and stock history must agree.
+
+## The solution
+
+**Traceable stock movements across locations and purchasing**
 
 The application brings together item catalogues, locations, stock receipts and issues, stock counts, reorder thresholds, suppliers, purchase orders, partial receiving, multi-location transfers and operational reports. The interface also provides search, filters, role-sensitive views and CSV onboarding workflows.
 

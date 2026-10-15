@@ -2,11 +2,19 @@
 
 *Full-stack application · Independent project · Ndlovu Business Technologies*
 
-## Why I built it
+## The problem
 
-Running a restaurant involves several connected activities: taking orders, preparing food, accounting for stock, buying ingredients and understanding performance. Treating each activity as a separate screen is not enough. The actions need clear business rules and dependable records behind them.
+**Disconnected workflows make restaurant operations difficult to coordinate.**
 
-I developed **Restaurant OS** as a full-stack application that brings point-of-sale, kitchen, inventory, procurement and reporting workflows into one system. I built it as an independent project to put these operational workflows into a working application and explore how to make the underlying records reliable.
+A sale triggers work beyond checkout: the kitchen needs the order, stock must be accounted for, purchases need receiving records, and managers need a reliable picture of performance. When these activities are managed separately, it becomes harder to trace what happened across the business.
+
+The challenge is keeping related workflows and records consistent, rather than presenting each activity on an isolated screen.
+
+## The solution
+
+**One application connecting sales, kitchen, inventory and purchasing**
+
+I built Restaurant OS to bring these operational workflows together, with backend controls for stock movements, transfers and access. The recorded walkthrough uses demonstration restaurant data.
 
 [Watch the application demonstration](../../assets/media/restaurant-os-walkthrough.mp4) · [View the visual case study](index.html)
 
