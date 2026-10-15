@@ -1,0 +1,15 @@
+# Local secrets and private development code must never enter the portfolio repository
+.env
+.env.*
+!.env.example
+*.pem
+*.p12
+*.key
+__pycache__/
+node_modules/
+.venv/
+venv/
+.DS_Store
+*.db
+*.sqlite
+*.sqlite3
