@@ -100,3 +100,31 @@ code{overflow-wrap:anywhere;word-break:break-word}
 .capstone-bottom a{color:#c9f9d8;font-weight:750}
 @media(max-width:900px){.learning-path{grid-template-columns:1fr}.learning-step+.learning-step{border-left:0;border-top:1px solid #dce7df}.capstone-flow{grid-template-columns:1fr}.flow-connector{transform:rotate(90deg);justify-self:center}.capstone-mark{display:none}}
 @media(max-width:650px){.learning-step{padding:24px}.capstone-feature{padding:24px}.capstone-bottom{align-items:flex-start;flex-direction:column}}
+
+/* Mobile navigation and final portfolio presentation refinements */
+html{scroll-padding-top:95px}
+#certifications,#background,#approach,#work{scroll-margin-top:95px}
+@media(max-width:650px){
+.top .nav{gap:8px;padding:11px 0 9px;min-height:0}
+.top .brand{font-size:.98rem;white-space:nowrap}
+.top .brand small{font-size:.7rem}
+.top .navlinks{display:flex;flex-wrap:nowrap;gap:20px;width:100%;max-width:100%;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:none;padding:0 0 3px;-webkit-overflow-scrolling:touch}
+.top .navlinks::-webkit-scrollbar{display:none}
+.top .navlinks a{font-size:.79rem;white-space:nowrap;flex:none}
+html{scroll-padding-top:94px}
+#certifications,#background,#approach,#work{scroll-margin-top:94px}
+}
+.capstone-architecture{margin:27px 0 29px}
+.architecture-services{display:grid;grid-template-columns:minmax(0,1fr) 90px minmax(0,1fr);align-items:center;gap:12px}
+.architecture-node,.architecture-foundation{border:1px solid #568671;border-radius:12px;background:#ffffff0a;padding:19px;min-width:0}
+.architecture-node strong,.architecture-node span,.architecture-foundation strong,.architecture-foundation span{display:block}
+.architecture-label{font-size:.72rem!important;text-transform:uppercase;letter-spacing:.1em;color:#9fdab9!important;font-weight:750;margin-bottom:7px}
+.architecture-node strong,.architecture-foundation strong{color:white;font-size:1.04rem}
+.architecture-node span:last-child,.architecture-foundation span:last-child{color:#c4dfd0;font-size:.82rem;margin-top:6px}
+.architecture-connection{text-align:center;color:#b4e6c8;font-size:.74rem;line-height:1.2}
+.architecture-connection span{display:block}
+.architecture-connection b{display:block;font-size:1.65rem;line-height:1.5;font-weight:500}
+.architecture-foundation{margin-top:13px;border-style:dashed}
+.footer-flex a{overflow-wrap:normal}
+.footer-flex a span{white-space:nowrap}
+@media(max-width:650px){.architecture-services{grid-template-columns:1fr;gap:7px}.architecture-connection b{transform:rotate(90deg)}.architecture-connection{padding:2px}.footer-flex{gap:12px}.footer-flex>span:last-child{line-height:2}}
