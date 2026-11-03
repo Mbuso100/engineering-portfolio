@@ -128,3 +128,16 @@ html{scroll-padding-top:94px}
 .footer-flex a{overflow-wrap:normal}
 .footer-flex a span{white-space:nowrap}
 @media(max-width:650px){.architecture-services{grid-template-columns:1fr;gap:7px}.architecture-connection b{transform:rotate(90deg)}.architecture-connection{padding:2px}.footer-flex{gap:12px}.footer-flex>span:last-child{line-height:2}}
+
+/* Capstone diagram: explicit, resilient layout on desktop and mobile */
+.capstone-feature .capstone-architecture{display:block;margin:28px 0 30px}
+.capstone-feature .architecture-services{display:grid;grid-template-columns:minmax(0,1fr) 76px minmax(0,1fr);gap:14px;align-items:stretch}
+.capstone-feature .architecture-node{display:flex;flex-direction:column;justify-content:center;gap:7px;padding:22px;border:1px solid rgba(169,224,193,.45);border-radius:14px;background:rgba(255,255,255,.055);min-width:0}
+.capstone-feature .architecture-node .architecture-label,.capstone-feature .architecture-foundation .architecture-label{display:block;font-size:.72rem;line-height:1.45;letter-spacing:.1em;text-transform:uppercase;color:#a5e5c1;font-weight:700;margin:0}
+.capstone-feature .architecture-node strong,.capstone-feature .architecture-foundation strong{display:block;color:#fff;font-size:1.04rem;line-height:1.4}
+.capstone-feature .architecture-node>span:last-child,.capstone-feature .architecture-foundation>span:last-child{display:block;color:#c8e4d4;font-size:.84rem;line-height:1.55;margin:0}
+.capstone-feature .architecture-connection{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;color:#c1efd1;font-size:.75rem;line-height:1.4;text-align:center}
+.capstone-feature .architecture-connection span{display:block}
+.capstone-feature .architecture-connection b{display:block;font-size:1.65rem;font-weight:500;line-height:1.1}
+.capstone-feature .architecture-foundation{display:flex;flex-direction:column;gap:7px;margin-top:16px;padding:20px 22px;border:1px dashed rgba(169,224,193,.55);border-radius:14px;background:rgba(255,255,255,.04)}
+@media(max-width:700px){.capstone-feature .architecture-services{grid-template-columns:minmax(0,1fr);gap:10px}.capstone-feature .architecture-connection{gap:2px;padding:4px 0}.capstone-feature .architecture-connection b{transform:rotate(90deg)}.capstone-feature .architecture-node,.capstone-feature .architecture-foundation{padding:18px}}
